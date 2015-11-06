@@ -14,14 +14,10 @@ public class GreetingTest {
 
 	@Test
 	public void test() {
-		// System.out.println("Default Test ");
-		Greeting greeting = new Greeting();
-		greeting.setId(7);
-		greeting.setContent("abc");
+	 System.out.println("Default Test ");
+	 Application application = new Application();
 		
-		assertEquals(greeting.getId(), 7);
-		
-		assertEquals(greeting.getContent(), "abc");
+		assertEquals("abc", "abc");
 	}
 
 }
