@@ -8,7 +8,9 @@ public class SampleTest {
 	@Test
 	public void test() {
 		System.out.println("Default Test Case");
-		assertEquals(7, 7);
+		Greeting g1 = new Greeting(7, "abc");
+		
+		assertEquals(g1.getId(), 7);
 	}
 
 }
