@@ -8,7 +8,7 @@ import org.junit.Test;
 
 public class GreetingTest {
 	
-	private static Greeting greeting;
+	
 
 	@BeforeClass
 	public static void initGreeting() {
@@ -18,7 +18,7 @@ public class GreetingTest {
 	@Test
 	public void test() {
 		System.out.println("Default Test ");
-		greeting = new Greeting(7, "abc");
+		Greeting greeting = new Greeting(7, "abc");
 		
 		assertEquals(greeting.getId(), 7);
 		
