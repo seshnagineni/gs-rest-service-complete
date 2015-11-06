@@ -10,15 +10,14 @@ public class GreetingTest {
 	
 	
 
-	@BeforeClass
-	public static void initGreeting() {
-		
-	}
+	
 
 	@Test
 	public void test() {
-		System.out.println("Default Test ");
-		Greeting greeting = new Greeting(7, "abc");
+		// System.out.println("Default Test ");
+		Greeting greeting = new Greeting();
+		greeting.setId(7);
+		greeting.setContent("abc");
 		
 		assertEquals(greeting.getId(), 7);
 		

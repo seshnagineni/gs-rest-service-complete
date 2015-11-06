@@ -3,7 +3,19 @@ package hello;
 public class Greeting {
 
     private  long id;
-    private String content;
+    public void setId(long id) {
+		this.id = id;
+	}
+
+	private String content;
+    
+    public void setContent(String content) {
+		this.content = content;
+	}
+
+	public Greeting() {
+    	
+    }
 
     public Greeting(long id, String content) {
         this.id = id;
